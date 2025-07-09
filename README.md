@@ -14,9 +14,9 @@ To run the project in your local environment, follow these steps:
 3. Run development server: `npm run dev`
 4. Open `http://localhost:5173` in your web browser to view the app.
 
-# Authors
-* fobo-38
-  * [@fobotehhobo](https://twitter.com/fobotehhobo)
+# Contact
+* fobo-38: [@fobotehhobo](https://twitter.com/fobotehhobo)
+* Project Link: https://github.com/fobo-38/Weather-App
 
 # License
 This project is licensed under the [MIT] License - see the `LICENSE.md` file for details
