@@ -1,1 +1,27 @@
-# Weather-App
+# Weather App
+A simple weather app that displays the temperature and weather condition depending on the location you search for.
+
+# Built With
+* `React`
+* `JavaScript`
+* `Vite`
+* `Pixso` (Design Tool)
+
+# Running the Project
+To run the project in your local environment, follow these steps:
+1. Clone the repository to your local machine.
+2. Install dependencies: `npm install`
+3. Run development server: `npm run dev`
+4. Open `http://localhost:5173` in your web browser to view the app.
+
+# Authors
+* fobo-38
+  * [@fobotehhobo](https://twitter.com/fobotehhobo)
+
+# License
+This project is licensed under the [MIT] License - see the `LICENSE.md` file for details
+
+# Acknowledgments
+* Inspo: [Tyler Potts](https://youtu.be/GuA0_Z1llYU?si=KRuwoO-GGa7dDdX6)
+* Weather API: [OpenWeather](https://openweathermap.org/)
+* Weather Icons: [Weather Icon Pack](https://www.flaticon.com/packs/weather-507)
