@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import clear_icon from "./icons/clear.png";
 import cloud_icon from "./icons/cloud.png";
-import drizzle_icon from "./icons/drizzle.png";
-import humidity_icon from "./icons/humidity.png";
+import few_clouds_icon from "./icons/few_clouds.png";
+import shower_rain_icon from "./icons/shower_rain.png";
 import rain_icon from "./icons/rain.png";
+import thunderstorm_icon from "./icons/thunderstorm.png";
 import snow_icon from "./icons/snow.png";
+import mist_icon from "./icons/mist.png";
 import './App.css'
 
 const API = {
@@ -27,16 +29,20 @@ function App() {
     }
   }
 
-  const weather_desc = {
-    "01d": clear_icon,
-    "02d": cloud_icon,
-    "03d": cloud_icon,
-    "04d": cloud_icon,
-    "09d": drizzle_icon,
-    "10d": rain_icon,
-    "11d": rain_icon,
-    "13d": snow_icon,
-    "50d": humidity_icon
+  const weather_map = () => {
+    const icon = weather.weather[0].icon;
+    const weather_desc = {
+      "01d": clear_icon,
+      "02d": few_clouds_icon,
+      "03d": cloud_icon,
+      "04d": cloud_icon,
+      "09d": shower_rain_icon,
+      "10d": rain_icon,
+      "11d": thunderstorm_icon,
+      "13d": snow_icon,
+      "50d": mist_icon
+    };
+    return weather_desc[icon] || clear_icon;
   }
 
   const dateBuilder = (d) => {
@@ -72,13 +78,10 @@ function App() {
             </div>
             <div className="center_display">
               <label className="temp">{Math.round(weather.main.temp)}&deg;F</label>
-              <img src={clear_icon} className="weather_icon" alt=""></img>
+              <img src={weather_map()} className="weather_icon" alt=""></img>
             </div>
           </div>
         ) : ('')}
-        <div className="change_tab">
-          <button className="change_view">8-Day</button>
-        </div>
       </main>
     </div>
   )
