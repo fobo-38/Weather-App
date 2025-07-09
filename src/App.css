@@ -38,6 +38,10 @@ body {
     background: rgb(250, 249, 246);
 }
 
+.search_text:focus {
+    outline: none;
+}
+
 .location {
     position: absolute;
     width: 303px;
@@ -84,27 +88,21 @@ body {
     background: rgb(196, 225, 230);
 }
 
-.weather_icon {
+.center_display .weather_icon {
     position: absolute;
-    width: 91.07px;
-    height: 90px;
-    left: 50%;
-    right: 50%;
+    width: 150px;
+    height: 150px;
     top: 90px;
+    justify-content: center;
     transform: translate(-50%, -50%);
 }
 
-.temp {
+.center_display .temp {
     position: absolute;
     width: 106px;
     height: 60px;
-    left: 50%;
-    right: 50%;
     bottom: -10px;
     transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     color: rgb(250, 249, 246);
     font-family: "Kanit";
     font-size: 48px;
