@@ -10,7 +10,7 @@ import mist_icon from "./icons/mist.png";
 import './App.css'
 
 const API = {
-  key: "e791531f2b124ccc5a67a350f48b9cc7",
+  key: import.meta.env.VITE_API_KEY,
   base: "https://api.openweathermap.org/data/2.5/"
 }
 
@@ -40,7 +40,16 @@ function App() {
       "10d": rain_icon,
       "11d": thunderstorm_icon,
       "13d": snow_icon,
-      "50d": mist_icon
+      "50d": mist_icon,
+      "01n": clear_icon,
+      "02n": few_clouds_icon,
+      "03n": cloud_icon,
+      "04n": cloud_icon,
+      "09n": shower_rain_icon,
+      "10n": rain_icon,
+      "11n": thunderstorm_icon,
+      "13n": snow_icon,
+      "50n": mist_icon
     };
     return weather_desc[icon] || clear_icon;
   }
