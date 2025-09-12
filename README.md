@@ -1,4 +1,7 @@
 # Weather App
+![Weather_App_Preview](./public/Weather_app_UI.png)
+
+# Description
 A simple weather app that displays the temperature and weather condition depending on the location you search for.
 
 # Built With
